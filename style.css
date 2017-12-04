@@ -1,0 +1,44 @@
+
+/* GLOBALS */
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.null-con {
+	padding: 0;
+	margin: 0;
+}
+
+#main {
+  /*background-color: rgba(50,50,50,.8);*/
+  margin-top: 60px;
+	width: 90%;
+  /*margin-left: 15%;
+  margin-right: 15%;
+  padding: 15px;*/
+}
+
+#board {
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	/*box-sizing: content-box;
+	border: 5px solid green;
+	border-radius: 5px;*/
+	background-color: black;
+}
+
+#inputSearch {
+	margin-right: 5px;
+}
+
+/*
+input[type="text"] {
+	padding: 5px 15px;
+}
+
+input[type="password"] {
+	padding: 5px 15px;
+}
+*/

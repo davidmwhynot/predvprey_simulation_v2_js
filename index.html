@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pred vs Prey | v2_js</title>
+    <link rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+		<!-- NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="text-success">David Whynot</span></a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Placeholder</a></li>
+            <li><a href="#">Placeholder</a></li>
+            <li><a href="#">Placeholder</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputSearch" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default glyphicon glyphicon-search text-success" aria-hidden="true"></button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+		<!-- END NAVBAR -->
+
+		<!-- MAIN -->
+		<div id="main" class="container">
+			<div id="title" class="null-con">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Pred vs Prey v2_js</h2>
+					</div>
+				</div>
+			</div>
+			<div id="interface" class="null-con">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="well">
+							<form class="form-horizontal">
+							  <fieldset>
+							    <legend><h4>Options</h4></legend>
+							    <div class="form-group">
+							      <label for="inputEmail" class="col-lg-1 col-lg-offset-1 control-label">Email</label>
+							      <div class="col-lg-4">
+							        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+							      </div>
+							      <label for="inputPassword" class="col-lg-1 col-lg-offset-1 control-label">Password</label>
+							      <div class="col-lg-4">
+							        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+							      </div>
+							    </div>
+									<div class="form-group">
+										<div class="checkbox col-lg-10 col-lg-offset-2">
+											<label>
+												<input type="checkbox"> Checkbox
+											</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-lg-10 col-lg-offset-2">
+							        <button id="btnRun" class="btn btn-info">Run</button>
+										</div>
+									</div>
+							  </fieldset>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="panel panel-primary">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Description</h3>
+						  </div>
+						  <div class="panel-body">
+						    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas maxime laudantium eligendi est debitis, id dolore natus nemo iste sequi sit neque non. Alias dolorem atque aliquid distinctio neque eos ducimus, adipisci rem et deleniti nisi aliquam. Hic dicta perspiciatis ducimus. Eaque mollitia sunt nesciunt debitis vero quis, quaerat obcaecati eligendi quae nulla ipsam commodi laudantium cupiditate placeat sapiente? Nihil tempora totam assumenda deserunt dolorem libero itaque officiis eum vitae labore quas veritatis voluptas, fuga debitis adipisci ea repellendus voluptatum ratione iste nobis laboriosam. Et quasi aut, fugit blanditiis sint unde, assumenda eum qui obcaecati aperiam debitis voluptatibus harum nobis.
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="simContainer" class="null-con">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="well">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="btn-group btn-group-justified">
+						        <span id="btnRun" class="btn btn-primary btn-sm">Run</span>
+						        <span id="btnStop" class="btn btn-primary btn-sm">Stop</span>
+										<span id="btnSetup" class="btn btn-primary btn-sm">Setup a Board</span>
+										<span id="btnReset" class="btn btn-primary btn-sm">Reset Simulation</span>
+										<span id="btnStep" class="btn btn-primary btn-sm">Go One Step</span>
+										<!-- <span id="btnStepTwo" class="btn btn-primary btn-sm">Go Two Steps</span>
+										<span id="btnStep100" class="btn btn-primary btn-sm">Go 100 Steps</span>
+										<span id="btnStepStat" class="btn btn-primary btn-sm">Stats and Step</span>
+										<span id="btnZoomIn" class="btn btn-primary btn-sm">Zoom In</span>
+										<span id="btnZoomOut" class="btn btn-primary btn-sm">Zoom Out</span>
+										<span id="btnStats" class="btn btn-primary btn-sm">Compute Statistics</span> -->
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<canvas id="board" width="800" height="400"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div id="graphs" class="null-con">
+				<div class="row">
+					<div class="col-md-12">
+							<h3>Graphs</h3>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- END MAIN -->
+
+		<!-- JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js" charset="utf-8"></script>
+		<!-- END JS -->
+	</body>
+</html>
